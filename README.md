@@ -32,3 +32,21 @@ A cross-platform CLI assistant that uses Gemini to intelligently execute system 
 8.  **Cleanup:** `gsh remove unused docker containers`
 9.  **File Manipulation:** `gsh convert all png files in this folder to webp` (requires ffmpeg/magick)
 10. **System Update:** `gsh update all my installed packages`
+
+## Installation
+
+**Mac/Linux:**
+Run this command in your terminal:
+```bash
+curl -fsSL [https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/gsh/main/install.sh](https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/gsh/main/install.sh) | bash
+
+```
+
+**Windows:**
+Download `gsh.exe` from the [Releases Page](https://www.google.com/search?q=https://github.com/YOUR_GITHUB_USERNAME/gsh/releases) and add it to your PATH.
+
+```
+
+*(Make sure to replace `YOUR_GITHUB_USERNAME` with your actual username in the link above).*
+
+```
