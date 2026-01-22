@@ -98,15 +98,12 @@ def winget_list():
     """(Windows) Lists installed packages."""
     return run_command_safely(["winget", "list"])
 
-# Universal Shell Commands
+# universal shell tools
 def run_bash_command(command: str):
-    """Executes a Bash command (for Mac/Linux)."""
-    return run_command_safely(["bash", "-c", command], shell_mode=True)
+    return run_command_safely(["bash", "-c", command], shell_mode=False) 
 
 def run_powershell_command(command: str):
-    """Executes a PowerShell command (for Windows)."""
-    return run_command_safely(["powershell", "-Command", command], shell_mode=True)
-
+    return run_command_safely(["powershell", "-Command", command], shell_mode=False)
 
 def main():
     if IS_WINDOWS:
@@ -119,7 +116,7 @@ def main():
         sys_prompt = "You are gsh (Gemini Shell) on macOS/Linux. Use 'brew' tools for software, 'bash' for everything else."
 
     model = genai.GenerativeModel(
-        model_name='gemini-2-flash',
+        model_name='gemini-2.5-flash',
         tools=tools,
         system_instruction=sys_prompt
     )
