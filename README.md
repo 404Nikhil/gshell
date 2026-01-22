@@ -46,7 +46,5 @@ curl -fsSL [https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/gsh/main/inst
 Download `gsh.exe` from the [Releases Page](https://www.google.com/search?q=https://github.com/YOUR_GITHUB_USERNAME/gsh/releases) and add it to your PATH.
 
 ```
-
-*(Make sure to replace `YOUR_GITHUB_USERNAME` with your actual username in the link above).*
-
+Make sure to replace `YOUR_GITHUB_USERNAME` with your actual username in the link above
 ```
